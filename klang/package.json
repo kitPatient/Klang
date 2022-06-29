@@ -1,0 +1,25 @@
+{
+    "name": "klang",
+    "displayName": "klang",
+    "description": "klang custom language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "klang",
+            "aliases": ["klang", "klang"],
+            "extensions": [".klang"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "klang",
+            "scopeName": "source.klang",
+            "path": "./syntaxes/klang.tmLanguage.json"
+        }]
+    }
+}

@@ -1,0 +1,1 @@
+4 n-s 3 s-n + n-s 6 -s n-s 2dup  s-n s-n s-n -n + + . -s "asdf" $ -n
