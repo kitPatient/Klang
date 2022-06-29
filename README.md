@@ -5,7 +5,7 @@ Stack-Based Programming Language
 
 This Language requires [Python](https://www.python.org/) to use, so make sure it is installed and setup correctly.
 
-Run the command ``` python klang.py Examples\test.klang ``` in the directory you downloaded it in.
+Run the command ``` python klang.py Examples\test.klang ``` in the directory you downloaded it in, if it works successfully the number 20 should be displayed
 
 # Language
 
