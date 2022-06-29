@@ -53,6 +53,7 @@ def needInStack(stack , number):
         raise NotEnoughOnStack()
     
 def _help():
+        assert False, "Not Implemented Yet"
     print("--HelpingMode--")
     
 def _sim(file):
@@ -231,9 +232,11 @@ def _sim(file):
     exit(1)
 
 def _com(file):
+    assert False, "Not Implemented Yet"
     print("compiling mode with file name: %s" % file)
     
 def _dump(file):
+    assert False, "Not Implemented Yet"
     print("dumping mode with file name: %s" % file)
     
 def main():
@@ -245,8 +248,6 @@ def main():
         subCommand = ARGS[index]
         if subCommand == ("-h" or "help"): 
             _help()
-            if index + 1 <= len(ARGS):
-                index += 1
         elif subCommand == "sim":
             if index + 1 != len(ARGS):
                 if ARGS[index + 1].startswith("-"):
@@ -262,26 +263,15 @@ def main():
                 _com(ARGS[index + 1])
             else:
                 raise NoFileProvided()
-        
-            if index + 2 <= len(ARGS):
-                index += 2
         elif subCommand == "dump":
             if index + 1 != len(ARGS):
                 
                 if ARGS[index + 1].startswith("-"):
                     _dump("output.klang")
-                    if index + 1 <= len(ARGS):
-                        index += 1
                 else:
                     _dump(ARGS[index + 1])
-                
-                    if index + 2 <= len(ARGS):
-                        index += 2
             else:
                 _dump("output.klang")
-                
-                if index + 1 <= len(ARGS):
-                    index += 2
         else:
             raise UnknownArgumentProvided(subCommand)
     
