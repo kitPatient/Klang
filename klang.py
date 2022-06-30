@@ -53,7 +53,7 @@ def needInStack(stack , number):
         raise NotEnoughOnStack()
     
 def _help():
-        assert False, "Not Implemented Yet"
+    assert False, "Not Implemented Yet"
     print("--HelpingMode--")
     
 def _sim(file):
